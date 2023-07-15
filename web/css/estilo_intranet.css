@@ -1,0 +1,103 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 26 may. 2022, 12:24:30
+    Author     : Ada
+*/
+:root{
+    --primary:#2196f3;
+    --light:#ffffff;
+    --grey:#efefef;
+}
+body {
+  overflow: hidden;
+  font-family: 'Mulish',sans-serif;
+  font-weight: 300;
+  color:var(--primary);
+}
+a:hover{
+    text-decoration: none;
+}
+.bg-primary{
+    background-color: var(--primary)!important;
+}
+.bg-light{
+    background-color: var(--light)!important;
+}
+.btn-primary{
+    background-color: var(--primary)!important;
+}
+.btn{
+    border:0;
+}
+
+#sidebar-container {
+    /***error**/
+  min-height: 100vh;
+  min-width: 35vh;
+}
+#sidebar-container .logo{
+    padding:.875rem 1.25rem;
+}
+#sidebar-container .menu{
+    width: 18rem;
+}
+
+#content{
+    overflow-y: auto;
+    height: 100vh;
+    padding-bottom: 5rem;
+}
+.color-title{
+    background-color: var(--primary)!important;
+    color:#ffffff;
+}
+.table{
+    font-size: 12px;
+}
+a{
+    text-decoration: none;
+}
+/*===========================*/
+.overlay {
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 2;
+      }
+      
+.popup {
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        top: 25%;
+        left: 25%;
+        text-align: center;
+        background: white;
+      }
+     
+      .popup h2 {
+        font-size: 15px;
+        height: 50px;
+        line-height: 50px;
+        color: black;
+      }
+      .CloseIcon{
+        cursor: pointer;
+      }
+      
+      #message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+#inner-message {
+    margin: 0 auto;
+}

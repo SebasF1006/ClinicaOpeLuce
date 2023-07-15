@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a2cf99e9-3cb1-42eb-a938-b2f788e20fd6">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="76"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="id_cita" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     vw_citapaciente.`idcita` AS idcita,
+(SELECT 
+CONCAT(paciente.`nombres_paciente`,' ',paciente.`apellidos_paciente`) FROM paciente WHERE idpacientes=$P{id_cita}) as nombres_paciente,
+     vw_citapaciente.`ndoctor` AS ndoctor,
+     vw_citapaciente.`tipo_cita` AS tipo_cita,
+     vw_citapaciente.`costo_cita` AS costo_cita,
+     vw_citapaciente.`fecha_cita` AS fecha_cita,
+     vw_citapaciente.`hora_cita` AS hora_cita
+FROM
+     `vw_citapaciente` vw_citapaciente 
+where idpacientes = $P{id_cita} ORDER BY idcita]]>
+	</queryString>
+	<field name="idcita" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombres_paciente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ndoctor" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tipo_cita" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="costo_cita" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fecha_cita" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="hora_cita" class="java.sql.Time">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="309" splitType="Stretch">
+			<staticText>
+				<reportElement x="25" y="133" width="208" height="22" uuid="488eb7cd-5d70-4814-8ed8-e772f77d53db"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Av. Arequipa 1885 Lince, Lima]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="155" width="208" height="20" uuid="0049c4cc-0081-4e19-996f-ef2576e1a38c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[998 138 830 - 01 206 4700]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="71" y="206" width="100" height="25" uuid="c8b9db81-cbd4-497a-8d30-19afd73fa160"/>
+				<textElement textAlignment="Right">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PACIENTE:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="285" width="83" height="20" uuid="e00d3f20-0f28-42c0-9e17-14c87100a718"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IDCITA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="683" y="285" width="105" height="20" uuid="1bc74855-e4bc-4196-a02a-0da4d7af7503"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[HORA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="578" y="285" width="105" height="20" uuid="dbd9d432-27f9-4539-9a2a-9dacfeaedcef"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FECHA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="326" y="285" width="176" height="20" uuid="a4614636-9cbb-4030-86cc-be7fef639c6a"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TIPO DE CITA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="98" y="285" width="228" height="20" uuid="319d4dc8-f4de-4e8d-addf-d7157d652fba"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DOCTOR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="502" y="285" width="76" height="20" uuid="35dd0479-5f3b-4a00-81e6-87ff1c96ab92"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[COSTO]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="182" y="206" width="113" height="50" uuid="0a328ddf-fd00-4963-a662-a2292465dc3d"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombres_paciente}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="-21" y="-19" width="823" height="132" uuid="5b9ffc12-57f3-4968-b754-fcc74810c164"/>
+				<imageExpression><![CDATA["fondo_celeste.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="218" y="-19" width="605" height="132" uuid="80d77df5-8114-407a-84d5-520ad16190eb"/>
+				<imageExpression><![CDATA["fondo_celeste.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="443" y="-19" width="380" height="132" uuid="e27c9d2c-dc0c-4191-aade-ae1ff7dc3284"/>
+				<imageExpression><![CDATA["fondo_celeste.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="668" y="-19" width="155" height="132" uuid="ffe45d65-dda9-4406-808b-f73a7afda906"/>
+				<imageExpression><![CDATA["fondo_celeste.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="668" y="54" width="155" height="59" uuid="c46e744b-4938-4524-8d99-0c82908a207d"/>
+				<imageExpression><![CDATA["fondo_celeste.png"]]></imageExpression>
+			</image>
+			<image scaleImage="Clip">
+				<reportElement x="769" y="54" width="54" height="59" uuid="bd428138-3dae-4966-b412-8c713db864dc"/>
+				<imageExpression><![CDATA["fondo_celeste.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="15" y="11" width="203" height="68" uuid="e08f14e8-874b-4200-bfde-8120c2ea6c1f"/>
+				<imageExpression><![CDATA["Clinica_Logo.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="672" y="0" width="153" height="86" uuid="b2e91294-b599-4636-8b09-f68a88592636"/>
+				<imageExpression><![CDATA["logo__ojo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="171" y="27" width="497" height="46" uuid="96bd322e-fe16-49ba-ad80-ee1ec77434ca"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REPORTE CITAS DE UN PACIENTE]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="36" splitType="Stretch">
+			<textField>
+				<reportElement x="15" y="12" width="83" height="20" uuid="475e2d19-f353-4f46-a5ea-b930cb421ca9"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{idcita}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="98" y="12" width="228" height="20" uuid="d1eb566d-e17e-49bf-82db-d0131a535240"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ndoctor}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="326" y="12" width="176" height="20" uuid="73bd0049-a8c9-44d7-9d76-57c2a26af816"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tipo_cita}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="578" y="12" width="105" height="20" uuid="d890c0b4-05f0-4fce-81e3-5b113ee9dd54"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{fecha_cita}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="502" y="12" width="76" height="20" uuid="ce31c3fe-7045-4d9c-b81b-fa52bb6a969b"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["S/. "+$F{costo_cita}]]></textFieldExpression>
+			</textField>
+			<textField pattern="h.mm a">
+				<reportElement x="683" y="12" width="105" height="20" uuid="7195562f-1963-4f88-b8f4-ddace433372a"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hora_cita}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

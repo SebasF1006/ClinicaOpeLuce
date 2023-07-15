@@ -1,0 +1,77 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 24 may. 2022, 09:16:06
+    Author     : Ada
+*/
+@media only screen and (max-width: 560px){
+    
+    .cirugia .content .info-img .img{
+        
+        width: 100%;
+    }
+    .copy{
+        font-size: 15px;
+        text-align: center;
+    }
+    .sociales{
+        width: 100%;
+        text-align: center;
+        font-size: 28px;
+    }
+    .sociales a{
+        color: #3E99DE;
+        text-decoration: none;
+    }
+}
+@media only screen and (max-width: 758px){
+
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+    .menu{
+        position: fixed;
+        width: 40%;
+        height: 100vh;
+        background-color: var(--color-plo);
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0;
+        z-index: 100;
+        transition: .8s;
+    }
+    .menu a{
+        display: block;
+        padding: 20px;
+        color: #fff;
+    }
+    .esconder-menu:hover,
+    .menu a:hover{
+        color: #4D4D5C;
+    }
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+    }
+    .servicios .content .info-img {
+        flex-direction: column;
+    }
+    .servicios .content .info-img .img{
+        width: 100%;
+    }
+    .cirugia .content .info-img{
+        justify-content: space-evenly;
+    }
+    .contacto .content .info.contacto{
+        flex-direction: column;
+    }
+}
+

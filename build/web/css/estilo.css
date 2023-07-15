@@ -1,0 +1,157 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 24 may. 2022, 09:31:15
+    Author     : Ada
+*/
+
+:root{
+    --primary:#2196f3;
+    --light:#ffffff;
+    --grey:#efefef;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'mulish',sans-serif;
+}
+/*================= MENU ====================*/
+.name{
+   font-size: 20px;
+    font-weight: bold; 
+}
+#menu li > a{
+    font-size: 18px;
+    font-weight: bold;
+    color:#3f3f3f;
+}
+/*=============== CAROUSEL ====================*/
+.carousel-inner{
+    max-height: 50rem;
+}
+
+#info{
+    text-align: center;
+    justify-content: center !important;
+}
+.card{
+    text-align: center;
+    align-items: center;
+    align-content: space-between;
+}
+#blog{
+    padding: 15px 0;
+}
+
+.card-body{
+    border-radius: none;
+}
+h5{
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+}
+.titulo{
+    text-align: left;
+}
+.frase{
+    text-align: left;
+}
+.cuerpo{
+    text-align: justify;
+}
+#contenedor-maps{
+    position:absolute;
+      top:10%; 
+      left: 10%;
+}
+
+#bg-maps{
+    position:relative;
+    margin-top: 50px;
+    top: -70px;
+} 
+
+ #seccion-maps{
+    background-color: #2196f3;
+    margin-top: 10px;
+    min-height:600px;
+    position:relative;
+}
+.icon{
+    color:#fff;
+}
+#intro{
+    background-color: #ffffff;
+}
+.mision{
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+    
+}
+/*=========================CONTACTOS FORMULARIO================================*/
+/*
+
+#bg-contactos{
+    position:relative;
+    margin-top: 50px;
+    top: -70px;
+} 
+
+ #seccion-contacto{
+    background-color: #2196f3;
+    margin-top: 10px;
+    min-height:600px;
+    position:relative;
+}
+
+#contenedor-formulario{
+    position:relative;
+    
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background: #fbfafa;
+    border-radius:5px;
+    
+}
+
+#titulo-formulario {
+    color: #3f3f3f;
+}*/
+
+/*=========================FOOTER================================*/
+.sociales{
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+.sociales a{
+    color: #3E99DE;
+    text-decoration: none;
+}
+footer{
+    color: var(--primary) !important;
+}
+
+/*========= RESPNOSIVE ================*/
+@media (max-width:768px){
+    #intro{
+        width: 90% !important;
+    }
+    .servicio-fila{
+        width: 100% !important;
+        text-align: center;
+    }
+    #blog{
+      padding: 10px 0;
+      text-align: center;  
+    }
+}
+@media (max-width:576px){
+    .icono-wrap{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}

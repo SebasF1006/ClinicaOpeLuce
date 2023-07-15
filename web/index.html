@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Clinica Opeluce</title>
+    
+   <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!--========================================================== -->
+                        <!-- BOOTSTRAP -->
+    <!--========================================================== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    
+    <!--========================================================== -->
+                        <!-- ESTILO PROPIO -->
+    <!--========================================================== -->
+    <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
+    <link href="css/fontello.css" rel="stylesheet" type="text/css"/>
+    <link href="css/carousel.css" rel="stylesheet" type="text/css"/>
+    <!--========================================================== -->
+                        <!-- RECUERDA COLOCAR ICONO A TODAS LAS PAGINAS -->
+    <!--========================================================== -->
+    <link rel="icon" href="img/icono.ico"/>
+</head>
+<body>
+    <!--========================================================== -->
+                        <!-- NAVBAR -->
+    <!--========================================================== -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light p-3 border-bottom" id="menu">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <label class="name text-primary fs-5 fw-bold">Clínica Opeluce</label>
+                </a>
+                <button class="navbar-toggler" type="button" 
+                        data-toggle="collapse" 
+                        data-target="#navbarSupportedContent" 
+                        aria-controls="navbarSupportedContent" 
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servi">Servicios</a>
+                      </li>
+                      <!--li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contácto</a>
+                      </li-->
+                      <li class="nav-item"> 
+                        <a class="nav-link" href="login.jsp">Log In</a>
+                      </li>
+                  </ul>
+                </div>
+            </div>
+      </nav>
+        <!--========================================================== -->
+                        <!-- SLIDER -->
+        <!--========================================================== -->
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/banner_ojos.png" alt="alt"/>
+                  <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1>Comprometidos con tu bienestar</h1> <br>
+                      <!--<p>Some representative placeholder content for the first slide of the carousel.</p>-->
+                      <p class="fw-bold"><a class="btn btn-lg btn-warning text-light" href="login.jsp">Reservar cita</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <!--========================================================== -->
+                            <!-- INICIO -->
+        <!--========================================================== -->
+      <section class="w-50 mx-auto text-center ">
+          <h1 class="p-3 fs-2 border-bottom border-3">¿Por qué <span class="text-primary">Elegirnos?</span></h1>
+          <p class="p-3 fs-4"><span class="text-primary">Opeluce</span> es una 
+              clinica que atiende cualquier tipo de problema relacionado a sus ojos</p>
+      </section>
+      <section class="container-fluid" id="info">
+          <div class="row w-75 mx-auto my-5 servicio-fila">
+              <div class="col-lg-3 col-md-6 col-sm-12 my-4">
+                  <img src="img/icon-consulta.png" alt="alt" width="80" height="70"/>
+                  <div>
+                      <h4 class="fs-6 mt-4 px-4 pb-1">Consulta Oftalmologica</h4>
+                  </div>
+              </div>    
+              <div class="col-lg-3 col-md-6 col-sm-12 my-4">
+                  <img src="img/icon-lentes.png" alt="alt" width="80" height="70"/>
+                  <div>
+                      <h4 class="fs-6 mt-4 px-4 pb-1">Botica Oftalmologica</h4>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 my-4">
+                  <img src="img/icon-ojo.png" alt="alt" width="80" height="70"/>
+                  <div>
+                      <h4 class="fs-6 mt-4 px-4 pb-1">Exámenes por diagnóstico</h4>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 my-4">
+                  <img src="img/icon-doctor.png" alt="alt" width="80" height="70"/>
+                  <div>
+                      <h4 class="fs-6 mt-4 px-4 pb-1">Médicos Especializados</h4>
+                  </div>
+              </div>
+          </div>
+      </section>
+      
+   <!--========================================================== -->
+                        <!-- BLOG -->
+    <!--========================================================== -->
+        <div class="bg-primary" >          
+        <div class="container-fluid" id="blog">
+            <div class="row w-75 mx-auto my-5">
+                <div class="col-lg-9 col-md-12 col-sm-12 my-2">
+                    <h4 class="text-light font-weight-bold mb-0">Conoce algunos Tips para el cuidado de tus ojos </h4>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 my-2">
+                    <a href="blog.html" class="btn btn-warning text-light w-100 align-self-cente fw-bold">Ir al Blog</a>
+                    
+                </div>
+            </div>
+                    <a name="nosotros" id="nosotros"></a>
+            </div>
+        </div>
+    
+     <!--========================================================== -->
+                                <!-- NOSOTROS -->
+        <!--========================================================== -->
+        
+        <section class="bg-light">
+            <section class="w-50 mx-auto text-center pt-5">
+                <h1 class="p-3 fs-2 border-bottom border-3"><span class="text-primary">Nosotros</span></h1>
+            </section>    
+            <section class="container-fluid" id="info">
+                <div class="row w-75 mx-auto my-5 nosotros-info">
+                        <div class="col-lg-6 mb-2">
+                            <img src="img/nosotros.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-lg-6 mb-2">
+                            <h5 class="titulo mt-4">¿Quienes Somos?</h5>
+                            <h2 class="frase font-weight-bold"><span class="text-primary">EMPRESA CON MAS DE 10 AÑOS DE EXPERIENCIA</span></h2>
+                            <p class="cuerpo fs-2">
+                                Somos expertos en salud visual
+                                Nos dedicamos a la atención integral de todos los problemas 
+                                oftalmológicos, contando con un grupo de profesionales altamente 
+                                calificados, quienes se apoyan en la más avanzada y completa tecnología 
+                                de ayuda al diagnóstico y tratamiento de enfermedades oculares
+                            </p>
+                        </div>
+                        <div class="container px-4 py-5" id="featured-3">
+                            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                                <div class="feature col mt-2">
+                                    <div class="rounded-circle  d-inline-flex align-items-center justify-content-center bg-primary mb-3">
+                                        <img class="mision" src="img/mision.png" alt="alt"/>
+                                    </div>
+                                    <h2>Misión</h2>
+                                    <p>Brindar la mejor calidad en la atención a nuestros pacientes,
+                                    dedicándonos a la prevención, tratamiento, curación e investigación 
+                                    de enfermedades oculares</p>
+                                    <!--p><a class="btn btn-warning text-light fw-bold" href="#">ver más &raquo;</a></p-->
+                                </div>
+                                <div class="feature col mt-2">
+                                    <div class="rounded-circle d-inline-flex align-items-center justify-content-center bg-primary mb-3">
+                                        <img class="mision" src="img/vision.png" alt="alt"/>
+                                    </div>
+                                    <h2>Visión</h2>
+                                    <p>Ser el centro oftalmológico de prestigio a nivel nacional y internacional agregando excelencia en 
+                                        la atención de  nuestros pacientes.</p>
+                                    <!--p><a class="btn btn-warning text-light fw-bold" href="#">ver más &raquo;</a></p-->
+                                </div>
+                                <div class="feature col mt-2">
+                                    <div class="rounded-circle d-inline-flex align-items-center justify-content-center bg-primary mb-3">
+                                        <img class="mision" src="img/value.png" alt="alt"/>
+                                    </div>
+                                    <h2>Objetivos</h2>
+                                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another 
+                                    sentence and probably just keep going until we run out of words.</p>
+                                    <!--p><a class="btn btn-warning text-light fw-bold" href="#">ver más &raquo;</a></p-->
+                                </div>
+                            </div>
+            <a name="servi" id="servi"></a>
+                        </div>
+                    </div>   
+                
+            </section>  
+        </section>
+    
+        <!--========================================================== -->
+                                <!-- SERVICIOS -->
+        <!--========================================================== -->
+        
+        <section>
+            <section class="w-50 mx-auto text-center">
+                <h1 class="p-3 fs-2 border-bottom border-3"><span class="text-primary">Servicios</span></h1>
+            </section>
+            <section class="container-fluid" id="info">
+                <div class="row w-75 mx-auto my-5 servicio-info">
+                    <div class="col-lg-4 mb-3">
+                        <div class="card">
+                            <img src="./img/imagen_1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h4 class="card-title">Cirugía</h4>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-3">
+                       <div class="card">
+                            <img src="./img/imagen_2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Consulta</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-3">
+                        <div class="card">
+                            <img src="./img/imagen_3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h4 class="card-title">Botica</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!--========================================================== -->
+                                <!--FOOTER-->
+        <!--========================================================== -->
+        <footer class="border-top ">
+          <div class="container-fluid mt-4">
+               <div class="row">
+                    <div class="col-lg-8">
+                        <p class=" text-center fs-6 fw-bold">Opeluce &copy; 
+                            Todos Los Derechos Reservados 2023 | Desarrollado por grupo N° 4</p>
+                    </div>
+                    <div class="sociales col-lg-4" >
+                        <a class="icon-facebook" href="https://www.facebook.com/clinicaopeluce/"></a>
+                        <a class="icon-twitter" href="https://twitter.com/opeluce?lang=es"></a>
+                        <a class="icon-whatsapp" href="https://wa.me/51926786055"></a>
+                        <a class="icon-youtube" href="https://www.youtube.com/channel/UCNflRXsWyD3U0iFpywlvuag/videos?app=desktop"></a> 
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
